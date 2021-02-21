@@ -16,7 +16,7 @@
         <header>
             <div class="logo">
                 <a href="https://www.records.nsw.gov.au">
-                    <img src="{{asset('src/frontend/img/nsw-logo.png')}}" alt="">
+                    <img src="{{asset('images/nsw-logo.png')}}" alt="">
                 </a>
             </div>
             <div class="title-bar">
