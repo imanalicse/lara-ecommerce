@@ -10732,11 +10732,3 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.vertical-center {
-  background: url(/images/logo.png?0b3dfe9012a0e16a383a948cf8ae90c6) no-repeat;
-}
