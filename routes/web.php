@@ -48,4 +48,8 @@ Route::domain('{subdomain}.laraecommerce.com')->group(function () {
     });
 });
 
+Route::get('/post/{id}', function ($id) {
+    //
+})->middleware('role:editor');
+
 require __DIR__.'/auth.php';
