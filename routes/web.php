@@ -19,9 +19,12 @@ Route::get('/', function () {
 
 //Route::get('/', [\App\Http\Controllers\PagesController::class, 'index']);
 
-Route::get('/search/{search}', function ($search) {
-    return $search;
-});
+//Route::get('/user/{user:id}', function (\App\Models\User $user) {
+//    echo "<pre>";
+//    print_r($user);
+//    echo "</pre>";
+//    die();
+//});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
