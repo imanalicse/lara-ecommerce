@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AminDashboardController;
+use App\Http\Controllers\Admin\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,7 +32,15 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+Route::resource('products', ProductController::class);
+//Route::get('products', [ProductController::class, 'index']);
+
 Route::prefix('admin')->namespace('Admin')->name('admin.')->middleware('admin')->group(static function() {
+
+//    Route::get('products', [ProductController::class, 'index']);
+//    Route::get('products/create', [ProductController::class, 'create']);
+
+
     Route::get('/', [AminDashboardController::class, 'index']);
     Route::get('/user', function (){
         echo "<pre>";
