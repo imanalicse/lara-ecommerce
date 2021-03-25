@@ -4,5 +4,9 @@ Product listing page <br>
     @json(["Hello"=>'world'])
 @endverbatim
 
-
-{{-- Hello world --}}
+<x-alert type="error" :message="$message" hasError="true" class="mb-4">
+    <x-slot name="title">
+        Server Error
+    </x-slot>
+    <strong>Whoops!</strong> Something went wrong!
+</x-alert>
